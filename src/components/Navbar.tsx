@@ -1,3 +1,5 @@
+import GitHubLogo from '/github-mark.svg';
+
 const Navbar = () => {
   return (
     <div className="flex h-16">
@@ -9,7 +11,11 @@ const Navbar = () => {
 
       <div className="grow" />
 
-      <div className="my-auto mr-4">{/* Link to GitHub repo */}</div>
+      <div className="my-auto mr-4">
+        <a href="https://github.com/hskwakr/bin2dec">
+          <img src={GitHubLogo} width={45} />
+        </a>
+      </div>
     </div>
   );
 };
