@@ -6,6 +6,10 @@ const Navbar = () => {
           Bin to Dec
         </h1>
       </div>
+
+      <div className="grow" />
+
+      <div className="my-auto mr-4">{/* Link to GitHub repo */}</div>
     </div>
   );
 };
