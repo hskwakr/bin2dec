@@ -13,6 +13,7 @@ const Binary = ({
     };
 
     return (
+      // eslint-disable-next-line react/no-array-index-key
       <div key={idx} className="mx-auto my-2 bg-amber-300">
         <div
           onClick={updateBinary}

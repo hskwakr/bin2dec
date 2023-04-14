@@ -12,7 +12,7 @@ export const useCounter = (value: number) => {
     let frame = 0;
 
     const timer = setInterval(() => {
-      frame++;
+      frame += 1;
       const progress = easeOutQuad(frame / totalFrames);
       setCount(value * progress);
 
