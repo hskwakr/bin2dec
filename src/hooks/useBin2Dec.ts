@@ -10,7 +10,10 @@ export const useBin2Dec = () => {
   const updateBin = (idx: number) => {
     setBinary(prev => {
       const newState = prev.map((v, i) => {
-        return i === idx ? (v ? 0 : 1) : v;
+        if (i === idx) {
+          return v ? 0 : 1;
+        }
+        return v;
       });
 
       return newState;
