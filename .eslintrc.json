@@ -38,7 +38,8 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
-    "no-use-before-define": ["error", { "functions": false }]
+    "no-use-before-define": ["off", { "functions": false }],
+    "@typescript-eslint/no-use-before-define": ["off", { "functions": false }]
   },
   "settings": {
     "react": {
